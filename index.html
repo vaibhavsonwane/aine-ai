@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .upload-btn-wrapper {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+        }
+        
+        .btn-modify {
+            border: none;
+            background-color: white;
+            height: 150px;
+            width: 150px;
+            font-weight: bold;
+        }
+        
+        .upload-btn-wrapper input[type=file] {
+            font-size: 100px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+        }
+        
+        .navbox {
+            background-color: white;
+            height: 80px;
+            width: 100%;
+        }
+        
+        .text {
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .fa-user:hover {
+            background-color: rgba(114, 184, 230, 0.342);
+        }
+        
+        .fa-book:hover {
+            background-color: rgba(114, 183, 230, 0.342);
+        }
+        
+        .fa-cog:hover {
+            background-color: rgba(114, 183, 230, 0.342);
+        }
+        
+        .pdbottom {
+            padding-bottom: 205px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1 sticky ">
+                <nav class="navbar navbar-expand d-flex flex-column align-item-start">
+                    <ul class="nav d-flex flex-column">
+                        <li class="nav-item">
+                            <img src="logo.png" class="p-3" alt="">
+                        </li>
+                        <li class="nav-item text-center">
+                            <a href=""><i class="far fa-user p-3 m-2 text-dark" style="font-size: 25px;"><br><span class="text">Students</span></i></a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a href=""> <i class="fas fa-book p-3 m-2 text-dark" style="font-size: 25px;"><br><span class="text">Lesson Plan</span></i></a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a href=""> <i class="fas fa-cog p-3 m-2 text-dark" style="font-size: 25px;"><br><span class="text" >Settings</span></i></a>
+                        </li>
+
+
+
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-11 ">
+                <nav class="navbox"></nav><br>
+                <div class="row bg-light">
+                    <div class="col pdbottom bg-light">
+                        <div class="col-md-2 ">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item active m-4" aria-current="page"> <i class="fa fa-caret-left"></i> Videos</li>
+                                </ol>
+                            </nav>
+                        </div>
+
+                        <div class="m-5 p-3 ">
+
+                            <input type="url" class="form-control " id="url " placeholder="insert URL here"><br>
+                            <h6 class="text-center">or</h6>
+                            <div class="upload-btn-wrapper">
+                                <button class="btn-modify">Upload</button>
+                                <input type="file" name="myfile" />
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+
+</html>
